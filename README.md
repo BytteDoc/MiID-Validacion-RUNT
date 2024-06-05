@@ -1,11 +1,11 @@
-# MiID Validacion RUNT
+# MiID Validación RUNT
 
-Este servicio sera expuesto para la validación del rostro frente a los registros del sistema Runt:
+Este servicio será expuesto para la validación del rostro frente a los registros del sistema Runt:
 
 ## Operaciones
     
 * Login User.
-* Validacion Runt .
+* Validación Runt .
 
 
 ## Api Login User
@@ -26,7 +26,7 @@ Url - Login User - POST https://servicesdev.miid.bio/Login/LoginUser
 *  emailAddress : Es el correo que se le genera al cliente por parte de MiID. Este dato es entregado por MiID.
 *  password : Es la Clave asignada previamente al cliente por parte de MiID. Este dato es entregado por MiID.
 
-Si la informacion ingresada es correcta, el Api Retorna
+Si la información ingresada es correcta, el Api Retorna
 
 ```json
 {
@@ -43,9 +43,9 @@ Si la informacion ingresada es correcta, el Api Retorna
 * **tokenType** : Bearer
 * **expiresIn** : Tiempo de Vigencia del Token en segundos
 * **accessToken** : Token que será usado posteriormente para llamado del api *Validacion Runt*
-* **successOperation** : Variable donde se indica si fue exitoso o no la autenticacion
+* **successOperation** : Variable donde se indica si fue exitoso o no la autenticación
 
-Si la informacion ingresada No es correcta, el Api Retorna
+Si la información ingresada No es correcta, el Api Retorna
 
 * status : 200
 
@@ -61,13 +61,13 @@ Si la informacion ingresada No es correcta, el Api Retorna
 **Variables de respuesta:**
 
 * **expiresIn** : Tiempo de Vigencia del Token en segundos
-* **extExpiresIn** : Tiempo de Vigencia del Token en dias
-* **successOperation** : Variable donde se indica si fue exitoso o no la autenticacion
+* **extExpiresIn** : Tiempo de Vigencia del Token en días
+* **successOperation** : Variable donde se indica si fue exitoso o no la autenticación
 * **message** : Mensaje del error
 
-## Api Validacion Runt
+## Api Validación Runt
 
-Url - Validacion Runt - POST
+Url - Validación Runt - POST
 
 https://servicesdev.miid.bio/Person/ValidacionRUNT
 
@@ -84,11 +84,11 @@ Cabeceras a enviar
 **Variables Form a enviar**:
 
 * **face** : Archivo binario con el insumo de la captura de rostro del usuario a validar.
-* **documentnumber** :  Numero de documento del usuario a validar.
+* **documentnumber** :  Número de documento del usuario a validar.
 * **documenttype** :  Tipo de documento del usuario a validar.
 * **EnterpriseClientId** : Id del cliente creado en MiID. Dato entregado por MiID.
 
-Si la informacion ingresada es correcta, el Api retorna
+Si la información ingresada es correcta, el Api retorna
 
 * status : 200
 
@@ -103,7 +103,7 @@ Si la informacion ingresada es correcta, el Api retorna
 }
 ```
 
-Si la informacion ingresada es correcta pero la imagen no es del usuario, el Api retorna
+Si la información ingresada es correcta pero la imagen no es del usuario, el Api retorna
 
 * status : 200
 
@@ -121,7 +121,7 @@ Si la informacion ingresada es correcta pero la imagen no es del usuario, el Api
 **Variables de respuesta:**
 
 * **descripcionRespuesta** : Mensaje de respuesta del consumo del servicio
-* **fechaTransaccion** : Fecha de transaccion
+* **fechaTransaccion** : Fecha de transacción
 * **primerNombre** : Primer nombre del usuario que se consulto
 * **segundoNombre** : Segundo nombre del usuario que se consulto
 * **primerApellido** : Primer apellido del usuario que se consulto
@@ -131,7 +131,7 @@ Si la el token bearer es incorrecto o esta vencido.
 
 * status : 201
 
-Si la informacion ingresada es correcta, pero el cliente no existe en el RUNT el api retorna
+Si la información ingresada es correcta, pero el cliente no existe en el RUNT el api retorna
 
 * status : 200
 ```json
