@@ -88,6 +88,14 @@ Cabeceras a enviar
 * **documenttype** :  Tipo de documento del usuario a validar.
 * **EnterpriseClientId** : Id del cliente creado en MiID. Dato entregado por MiID.
 
+| Nombre                | Tipo              | Obligatorio|
+|-----------------------|-------------------|------------|
+| face                  | Archivo (binario) | SI         |
+| documentnumber        | String            | SI         |
+| documenttype          | String            | SI         |
+| EnterpriseClientId    | String            | SI         |
+
+
 Si la información ingresada es correcta, el Api retorna
 
 * status : 200
