@@ -85,7 +85,7 @@ Cabeceras a enviar
 
 * **face** : Archivo binario con el insumo de la captura de rostro del usuario a validar.
 * **documentnumber** :  Número de documento del usuario a validar.
-* **documenttype** :  Tipo de documento del usuario a validar.
+* **documenttype** :  Tipo de documento del usuario a validar. 1 para CC (Cedula de Ciudadania).
 * **EnterpriseClientId** : Id del cliente creado en MiID. Dato entregado por MiID.
 
 | Nombre                | Tipo              | Obligatorio|
