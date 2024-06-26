@@ -96,6 +96,16 @@ Cabeceras a enviar
 | EnterpriseClientId    | String            | SI         |
 
 
+
+```json
+{
+    "face": "selfie.jpg",
+    "documentnumber": 10203040,
+    "documenttype": 1,
+    "EnterpriseClientId": "0"
+}
+```
+
 Si la información ingresada es correcta, el Api retorna
 
 * status : 200
